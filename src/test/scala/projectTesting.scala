@@ -2,6 +2,9 @@
 import org.scalatest.funsuite.AnyFunSuite
 import BankingApp.{Account, BankingApp}
 class projectTesting extends AnyFunSuite {
+  test("Password is 123abc") {
+    assert(BankingApp.adminPwd == "123abc")
+  }
   test("Customer list should be full") {
     assert(BankingApp.name.contains != 0)
   }
