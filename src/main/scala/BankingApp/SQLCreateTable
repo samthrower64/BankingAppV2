@@ -1,0 +1,10 @@
+CREATE TABLE `accountstorage` (
+  `Name` varchar(50) DEFAULT NULL,
+  `accNum` int(8) DEFAULT NULL,
+  `accType` varchar(40) DEFAULT NULL,
+  `accNum` varchar(40) DEFAULT NULL,
+  `bal` double DEFAULT NULL,
+  `CreditCard` tinyint(1) DEFAULT NULL,
+  `StandardAccount` tinyint(1) DEFAULT NULL,
+  `SavingsAccount` tinyint(1) DEFAULT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
