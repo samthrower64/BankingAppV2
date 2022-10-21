@@ -21,5 +21,17 @@ class projectTesting extends AnyFunSuite {
     val pattern = "[a-z]"
     assert(BankingApp.accType(0).toString().contains(pattern))
   }
+  */
+    test("Is Account Number Exception functional") {
+    assertThrows[InvalidACNException](throw new InvalidACNException("Exception thrown"))
+  }
+  test("Is Deposit Exception Functional") {
+    assertThrows[InvalidDepositException](throw new InvalidDepositException("Exception thrown"))
+  }
+  test("Is Selection Exception Functional") {
+    assertThrows[InvalidSelectionException](throw new InvalidSelectionException("Exception thrown"))
+  }
+}
+/*
 }
 */
